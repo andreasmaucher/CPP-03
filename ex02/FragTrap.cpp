@@ -6,13 +6,13 @@
 /*   By: amaucher <amaucher@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 14:22:27 by amaucher          #+#    #+#             */
-/*   Updated: 2024/04/27 15:56:56 by amaucher         ###   ########.fr       */
+/*   Updated: 2024/06/10 15:30:31 by amaucher         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap( std::string name ) : ClapTrap(name)
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
     this->_hit = 100;
     this->_energy = 100;
@@ -26,7 +26,7 @@ FragTrap::~FragTrap()
     std::cout << "FragTrap " << this->_name << " destructed." << std::endl;
 }
 
-void    FragTrap::highFive( void ) 
+void    FragTrap::highFive(void) 
 {
     if (this->_energy <= 0) 
 	{
